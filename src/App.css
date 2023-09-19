@@ -1,0 +1,245 @@
+.top-info{
+  position:fixed;
+  top:0;
+  z-index: 100;
+  background-color: rgb(139, 139, 180);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: center;
+  color:rgb(238, 211, 211);
+  border-bottom:1px solid black;
+  box-shadow:0px 5px 15px black;
+  cursor: pointer;
+
+}
+body{
+  background-color: rgb(139, 139, 180);
+
+}
+.top-info h5{
+  font-size: 50px;
+  font-weight:lighter;
+}
+.top-info i{
+  font-size: 50px;
+}
+
+
+.nav-item i{
+    display: block !important;
+    text-align: center;
+}
+.card-img-top{
+    max-width: 100%;
+    height: auto;
+}
+.trending, .movies, .tv-series, .search{
+  margin-top:110px;
+  margin-bottom:150px;
+  background-color: rgb(139, 139, 180);
+  
+}
+
+.content-title{
+  color:rgb(238, 211, 211);
+  text-align: center;
+  font-size: 30px;
+}
+.card{
+    margin:10px;
+    height: 480px;
+    background-color: inherit;
+    margin-left:0px;
+    margin-right:0px;
+    color:inherit;
+    border-style: none;
+   
+}
+.card-link{
+  display: block;
+  background-color: rgb(25, 25, 70);
+  color:rgb(238, 211, 211);
+  text-decoration: none;
+  border-radius: 5px;
+  
+}
+.card-link:hover{
+  background-color: rgb(238, 211, 211);
+  color:rgb(25, 25, 70);
+  padding:0 3px;
+}
+
+.card .card-body{
+  padding-bottom:0;
+}
+.card-title{
+  text-align: center;
+  height:40px;
+}
+.footer-context{
+  display:flex;
+  justify-content: space-between;
+  margin-top:10px;
+}
+.imdb-point{
+  position:absolute;
+  right: -5px;
+  top:-5px;
+  font-size: 10px;
+  background-color: blueviolet;
+  color:white;
+  border:1px solid blueviolet;
+  border-radius: 5px;
+}
+/*----------navbar */
+
+.navbar{
+  position:fixed;
+  bottom:0;
+  z-index: 100;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: rgb(25, 25, 70);
+  color:rgb(225, 186, 186);
+}
+.navbar a{
+  text-decoration: none;
+  color:rgb(238, 211, 211);  
+}
+/* pagination */
+
+.pagination span{
+  cursor:pointer;
+  margin-right:20px;
+  width: 30px;
+  text-align: center;
+}
+span.active{
+  background-color: rgb(25, 25, 70);
+  border:1px solid rgb(25, 25, 70);
+  border-radius: 3px;
+  color:rgb(225, 186, 186);
+}
+/* movies */
+.genres{
+  padding:10px 0;
+}
+.genres span{
+  margin:5px 5px;
+  background-color: rgb(25, 25, 70);
+  border:1px solid rgb(25, 25, 70);
+  color:rgb(225, 186, 186);
+  border-radius: 10px;
+  display:inline-block;
+  min-width: 50px;
+  position:relative;
+  cursor: pointer;
+  padding: 4px;
+}
+.selected-genres{
+  height: 50px;
+  padding:10px 0;
+}
+.selected-genres span{
+  margin:5px 5px;
+  background-color: rgb(25, 25, 70);
+  border:1px solid rgb(25, 25, 70);
+  color:rgb(225, 186, 186);
+  border-radius: 10px;
+  display:inline-block;
+  min-width: 50px;
+  position:relative;
+  padding: 4px;
+  padding-right: 8px;
+
+}
+.selected-genres span i{
+  cursor: pointer;
+  position:absolute;
+  top:4px;
+  }
+
+/* search */
+.search-bar{
+  margin-top:100px;
+  padding-left: 20%;
+  padding-right: 10%;
+  margin-bottom:50px;
+}
+.search-bar input{
+  display: inline-block;
+  margin-top:100px;
+  width: 70%;
+  border-style: none;
+  border:1px solid blueviolet;
+  border-radius: 5px;
+  height: 50px;
+  
+}
+.search-bar button{
+  display: inline-block;
+  width: 10%;
+  border-style: none;
+  background-color: rgb(25, 25, 70);
+  color: rgb(225, 186, 186);
+  border: 1px solid inherit;
+  border-radius: 5px;
+  margin-left:2px;
+}
+/* details */
+.details{
+  width: 1000px;
+  height: inherit !important;
+  margin: 200px auto;
+  background-color:rgb(101, 101, 138);
+  color:rgb(225, 186, 186);
+}
+.overview{
+  border:1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.artist-name{
+  font-size: 11px;
+  text-align: center;
+}
+.details .card-body{
+  padding: 5px 0;
+}
+
+.details .card{
+  height:200px;
+  margin:10px 10px;
+}
+.details .col-8{
+  margin-top:20px;
+}
+.row-btn{
+  padding: 20px 50px;
+}
+.row-btn a{
+  background-color: rgb(25, 25, 70);
+  color:rgb(225, 186, 186);
+
+}
+/*----------responsive height */
+
+@media only screen and (min-width: 768px) {
+    
+    .card{height:450px;}
+  }
+  @media only screen and (min-width: 992px) {
+    
+    .card{height:440px;}
+  }
+  @media only screen and (min-width: 1200px) {
+    
+    .card{height:500px;}
+  }
+  @media only screen and (min-width: 1400px) {
+    
+    .card{height:560px;}
+  }
